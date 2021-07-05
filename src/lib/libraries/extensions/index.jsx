@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -45,6 +45,9 @@ import gdxforIconURL from './gdxfor/gdxfor.png';
 import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
+
+import webapisampleIconURL from './webapisample/webapi.png';
+import webapisampleInsetIconURL from './webapisample/webapi-small.png';
 
 export default [
     {
@@ -317,5 +320,16 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: "Web API Sample Blocks",
+        extensionId: 'webapisample',
+        iconURL: webapisampleIconURL,
+        insetIconURL: webapisampleInsetIconURL,
+        collaborator: 'moonmile',
+        description: "You can call Web API.",
+        featured: true,
+        internetConnectionRequired: true,
+        helpLink: 'http://moonmile.net/'
     }
 ];
