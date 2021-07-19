@@ -46,8 +46,8 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-import webapisampleIconURL from './webapisample/webapi.png';
-import webapisampleInsetIconURL from './webapisample/webapi-small.png';
+import roomlatchImage from './roomlatch/roomlatch.png';
+import roomlatchButtonImage from './roomlatch/roomlatch-small.png';
 
 export default [
     {
@@ -322,14 +322,23 @@ export default [
         helpLink: 'https://scratch.mit.edu/vernier'
     },
     {
-        name: "Web API Sample Blocks",
-        extensionId: 'webapisample',
-        iconURL: webapisampleIconURL,
-        insetIconURL: webapisampleInsetIconURL,
-        collaborator: 'moonmile',
-        description: "You can call Web API.",
+        name: 'Roomlatch VM & Deployment',
+        extensionId: 'roomlatch',
+        collaborator: 'Yoshida Lab Team',
+        iconURL: roomlatchImage,
+        insetIconURL: roomlatchButtonImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Roombaに可能性あれ。"
+                description="Roomlatch VM and Deployment provides a development kit and VM for iRobot's Roomba to operate via Wi-Fi using ROS and Raspberry Pi."
+                id="gui.extension.roomlatch.description"
+            />
+        ),
         featured: true,
+        disabled: false,
         internetConnectionRequired: true,
-        helpLink: 'http://moonmile.net/'
+        bluetoothRequired: false,
+        helpLink: '.roomlatch/documentation.pdf'
+
     }
 ];
